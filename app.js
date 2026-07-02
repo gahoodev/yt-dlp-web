@@ -98,7 +98,12 @@ els.form.addEventListener("submit", async (event) => {
   try {
     const response = await fetch(`${API_BASE}/api/jobs`, {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: { 
+        "content-type": "application/json",
+        'ngrok-skip-browser-warning': 'true', 
+        'Cloudflare-No-Performance-Tracking': 'true',
+        'User-Agent': 'Mozilla/5.0'
+      },
       body: JSON.stringify({
         url: els.url.value.trim(),
         mode: selectedMode(),
