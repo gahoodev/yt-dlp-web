@@ -1,6 +1,6 @@
 // app.js
 // TODO: Renderでデプロイ後に発行される「https://〜.onrender.com」のURLに書き換えてください
-const API_BASE = "https://molecules-refuse-listed-philip.trycloudflare.com";
+const API_BASE = "https://head-anything-protest-scripts.trycloudflare.com";
 const state = { jobId: null, timer: null };
 
 const els = {
